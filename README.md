@@ -4,7 +4,7 @@ Maintain your system by cleaning up.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-maintenance/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-maintenance/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-maintenance/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-maintenance)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/maintenance)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/maintenance)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/releases/)|
+|[![github](https://github.com/buluma/ansible-role-maintenance/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-maintenance/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-maintenance/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-maintenance)|[![quality](https://img.shields.io/ansible/quality/57958)](https://galaxy.ansible.com/buluma/maintenance)|[![downloads](https://img.shields.io/ansible/role/d/57958)](https://galaxy.ansible.com/buluma/maintenance)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
