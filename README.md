@@ -2,9 +2,9 @@
 
 Maintain your system by cleaning up.
 
-|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-maintenance/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-maintenance/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-maintenance/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-maintenance)|[![downloads](https://img.shields.io/ansible/role/d/4758)](https://galaxy.ansible.com/buluma/maintenance)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/pulls/)|
+|GitHub|Version|Issues|Pull Requests|
+|------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-maintenance/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-maintenance/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -68,9 +68,9 @@ maintenance_journalctl_vacuum: 10d
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | GitLab |
+| Requirement | GitHub | Version |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
 
 ## [Context](#context)
 
@@ -115,7 +115,6 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 [buluma](https://buluma.github.io/)
 
-Please consider [sponsoring me](https://github.com/sponsors/buluma).
 
 ### [Special Thanks](#special-thanks)
 
