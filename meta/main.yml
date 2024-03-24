@@ -13,8 +13,7 @@ galaxy_info:
         - all
     - name: Amazon
       versions:
-        - "2018.03"
-        - "2023"
+        - all
     - name: EL
       versions:
         - "8"
