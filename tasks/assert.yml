@@ -5,14 +5,14 @@
     that:
       - maintenance_journalctl_vacuum is defined
       - maintenance_journalctl_vacuum is string
-    quiet: yes
+    quiet: true
 
 - name: assert | Test if item in maintenance_files_to_empty is set correctly
   ansible.builtin.assert:
     that:
       - item is defined
       - item is string
-    quiet: yes
+    quiet: true
   loop: "{{ maintenance_files_to_empty }}"
   when:
     - maintenance_files_to_empty is defined
