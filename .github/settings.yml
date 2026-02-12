@@ -5,4 +5,4 @@
 repository:
   description: Maintain your system by cleaning up.
   homepage: https://buluma.github.io/
-  topics: maintenance, ansible, molecule, tox, playbook
+  topics: maintenance, ansible, molecule, playbook
