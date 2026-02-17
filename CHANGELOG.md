@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-maintenance/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-maintenance/compare/24.3.31...HEAD)
+
+**Closed issues:**
+
+- Update action [\#13](https://github.com/buluma/ansible-role-maintenance/issues/13)
+- rebuild action [\#12](https://github.com/buluma/ansible-role-maintenance/issues/12)
+
 ## [24.3.31](https://github.com/buluma/ansible-role-maintenance/tree/24.3.31) (2024-03-29)
 
 [Full Changelog](https://github.com/buluma/ansible-role-maintenance/compare/1.2.0...24.3.31)
