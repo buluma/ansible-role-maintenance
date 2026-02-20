@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test if maintenance_journalctl_vacuum is set correctly
   ansible.builtin.assert:
     that:
