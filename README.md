@@ -12,35 +12,35 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-- name: Converge
-  hosts: all
-  become: yes
-  gather_facts: yes
+  - name: Converge
+    hosts: all
+    become: yes
+    gather_facts: yes
 
-  roles:
-    - role: buluma.maintenance
-      maintenance_files_to_empty:
-        - /tmp/some_file.txt
+    roles:
+      - role: buluma.maintenance
+        maintenance_files_to_empty:
+          - /tmp/some_file.txt
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-maintenance/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-- name: Prepare
-  hosts: all
-  become: yes
-  gather_facts: no
+  - name: Prepare
+    hosts: all
+    become: yes
+    gather_facts: no
 
-  roles:
-    - role: buluma.bootstrap
+    roles:
+      - role: buluma.bootstrap
 
-  tasks:
-    - name: create a file
-      ansible.builtin.copy:
-        dest: /tmp/some_file.txt
-        content: "Some content"
-        mode: "0644"
+    tasks:
+      - name: create a file
+        ansible.builtin.copy:
+          dest: /tmp/some_file.txt
+          content: "Some content"
+          mode: "0644"
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
