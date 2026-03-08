@@ -5,11 +5,11 @@
   gather_facts: no
 
   roles:
-  - role: buluma.bootstrap
+    - role: buluma.bootstrap
 
   tasks:
-  - name: create a file
-    ansible.builtin.copy:
-      dest: /tmp/some_file.txt
-      content: "Some content"
-      mode: "0644"
+    - name: create a file
+      ansible.builtin.copy:
+        dest: /tmp/some_file.txt
+        content: "Some content"
+        mode: "0644"
