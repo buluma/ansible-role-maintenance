@@ -9,6 +9,10 @@
 - Update action [\#13](https://github.com/buluma/ansible-role-maintenance/issues/13)
 - rebuild action [\#12](https://github.com/buluma/ansible-role-maintenance/issues/12)
 
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#27](https://github.com/buluma/ansible-role-maintenance/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [24.3.31](https://github.com/buluma/ansible-role-maintenance/tree/24.3.31) (2024-03-29)
 
 [Full Changelog](https://github.com/buluma/ansible-role-maintenance/compare/1.2.0...24.3.31)
