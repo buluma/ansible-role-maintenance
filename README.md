@@ -2,9 +2,9 @@
 
 Maintain your system by cleaning up.
 
-|GitHub|GitLab|Downloads|Version|
-|------|------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-maintenance/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-maintenance/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-maintenance/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-maintenance)|[![downloads](https://img.shields.io/ansible/role/d/buluma/maintenance)](https://galaxy.ansible.com/buluma/maintenance)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/releases/)|
+|GitHub|Issues|Pull Requests|Version|Downloads|
+|------|------|-------------|-------|---------|
+|[![github](https://github.com/buluma/ansible-role-maintenance/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-maintenance/actions/workflows/molecule.yml)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/pulls/)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-maintenance.svg)](https://github.com/buluma/ansible-role-maintenance/releases/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/maintenance)](https://galaxy.ansible.com/ui/standalone/roles/buluma/maintenance/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -18,9 +18,9 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   gather_facts: yes
 
   roles:
-  - role: buluma.maintenance
-    maintenance_files_to_empty:
-    - /tmp/some_file.txt
+    - role: buluma.maintenance
+      maintenance_files_to_empty:
+        - /tmp/some_file.txt
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-maintenance/blob/master/molecule/default/prepare.yml):
@@ -33,14 +33,14 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
   gather_facts: no
 
   roles:
-  - role: buluma.bootstrap
+    - role: buluma.bootstrap
 
   tasks:
-  - name: create a file
-    ansible.builtin.copy:
-      dest: /tmp/some_file.txt
-      content: "Some content"
-      mode: "0644"
+    - name: create a file
+      ansible.builtin.copy:
+        dest: /tmp/some_file.txt
+        content: "Some content"
+        mode: "0644"
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -68,31 +68,30 @@ maintenance_journalctl_vacuum: 10d
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | GitLab |
-|-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
+| Requirement | GitHub |
+|-------------|--------|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|
 
 ## [Context](#context)
 
 This role is part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
+
 ![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-maintenance/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
 
-This role has been tested on these [container images](https://hub.docker.com/u/buluma):
+This role has been tested on these [container images](https://hub.docker.com/u/robertdebock):
 
 |container|tags|
 |---------|----|
-|[Alpine](https://hub.docker.com/r/buluma/alpine)|all|
-|[Amazon](https://hub.docker.com/r/buluma/amazonlinux)|all|
-|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|all|
-|[Debian](https://hub.docker.com/r/buluma/debian)|all|
-|[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
-|[opensuse](https://hub.docker.com/r/buluma/opensuse)|all|
-|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
-|[Kali](https://hub.docker.com/r/buluma/kalilinux)|all|
+|[Alpine](https://hub.docker.com/r/robertdebock/alpine)|all|
+|[Amazon](https://hub.docker.com/r/robertdebock/amazonlinux)|all|
+|[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|all|
+|[Debian](https://hub.docker.com/r/robertdebock/debian)|all|
+|[Fedora](https://hub.docker.com/r/robertdebock/fedora)|all|
+|[Ubuntu](https://hub.docker.com/r/robertdebock/ubuntu)|all|
 
 The minimum version of Ansible required is 2.12, tests have been done on:
 
@@ -109,3 +108,4 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
+
